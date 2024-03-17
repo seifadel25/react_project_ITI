@@ -1,0 +1,454 @@
+.HomeC{
+  background-color: rgb(145, 222, 224);
+  font-family: relaway;
+  text-align: center;
+
+}
+#cl{
+
+  border-radius: 20px;
+}
+.cont{
+  display: grid;
+grid-template-rows: min-content(200px ,auto);
+grid-template-areas: 
+"a"
+"a"
+"a"
+
+"ma li  li"
+"ma  li li"
+"ma  li li"
+"ma  li li"
+;
+width: 94%;
+}
+.a{
+background-image:  url("./photo-1569974498991-d3c12a504f95.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+width: 90%;
+height: 600px;
+margin: 40px;
+border-radius: 20px;
+
+
+}
+.title{
+color: rgb(255, 255, 255);
+
+box-shadow: rgb(2, 0, 1) 20px;
+position: absolute;
+top: 80px;
+left: 41.7%;
+filter: drop-shadow(5px 5px 2px rgb(0, 0, 0));
+
+}
+.title::before{
+content:'' ;
+position: absolute;
+left: 24%;
+height: 3px;
+width: 50%;
+background-color: aqua;
+bottom: -20px;
+}
+.title:hover{
+  color: black;
+  filter: drop-shadow(5px 5px 2px rgb(103, 156, 78));
+  box-shadow : brown 20px;
+}
+.pa2{
+display: grid;
+grid-template-rows: min-content(200px ,auto);
+grid-template-areas: 
+"ma li  li"
+"ma  li li"
+"ma  li li"
+"ma  li li"
+
+
+
+;
+
+
+
+}
+.pa3{
+  display: none;
+}
+.r{
+position: absolute;
+top: 410px;
+height:250px ;
+width: 350px;
+filter: blur(3px);
+left: 25%;
+top: 67%;
+}
+.l{
+  position: absolute;
+ top: 410px;
+  height:250px ;
+  width: 350px;
+  filter: blur(3px);
+  right:  23%;
+  top: 67%;
+  }
+  .c{
+    position: absolute;
+    top: 360px;
+    height:300px ;
+    width: 520px;
+    top: 57%;
+    left: 32%;
+    }
+
+.list{
+  grid-area: li;
+width: 1000px;
+position: relative;
+text-align: left;
+}
+.list::before{
+content: '';
+height: 73%;
+width: 2px;
+background-color: rgb(23, 59, 70);
+position: absolute ;
+left:  10%;  
+bottom: 250px;
+
+margin: auto;
+}
+.item{
+width: calc(60% - 100px);
+ position: relative ;
+ left: 20%;
+ margin-bottom: 50px;
+}
+.item::before{
+content: '';
+position: absolute;
+right: 15px;
+height: 15px;
+width: 15px;
+border: 5px solid rgb(24, 175, 175);
+background-color: aliceblue;
+border-radius:50px ;
+left:-22.26%;
+}
+  
+h3{
+color: rgb(3, 39, 39);
+
+}
+.main{
+  grid-area: ma;
+  margin-bottom: 140px;
+
+  width: 400px;
+font-size: 20px;
+ 
+
+  } 
+  .pr{
+    font-size: 17px;
+    color: rgb(83, 82, 82);
+  }
+
+  @media (max-width: 700px) {
+    .HomeC{
+
+      width: 80%;
+      display: flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
+    }
+    .cont{
+      width: 300px;
+      margin:5px ;   
+
+      padding: 20px;
+    }
+.a{width: 300px;
+  margin:5px ;
+  border-radius: 20px;
+  box-shadow: black 20px;
+
+}
+.title{
+
+  font-size: 25px;
+  left: 12%;
+  top: 12%;
+}
+.title::before{
+  content:'' ;
+  position: absolute;
+  left: 21%;
+  height: 3px;
+  width: 50%;
+  background-color: aqua;
+  bottom: -20px;
+}
+.pa2{
+  display: none;
+  font-size: 12px;
+  background-color: black;
+  color: rgb(250, 243, 243);
+  border: 2px solid aqua;
+  width: 80%px;
+ border-radius: 20px;
+  margin: 3px;  
+  width: 300px;
+
+
+  font-size: 8px;
+}
+.r{
+  display: none;
+}
+.l{
+  display: none;
+}
+.c{
+display: none;
+}
+.main{
+
+font-size: 10px;
+left: 0;
+width: 33%;
+
+}
+
+.item{
+
+font-size: 12px;
+
+width: 66%px;
+
+margin: 5px;
+}
+.item::before{
+  display: none;
+}
+.list::before{
+  display: none;
+}
+.pa3{display: grid;
+  grid-template-rows: min-content(200px ,auto);
+  grid-template-areas: 
+  "5 5 6 6"
+  "6 6 6 6"
+  "7 7 7 7"
+  " 9 9 9 9"
+  
+;
+font-size: medium;
+text-align: center;
+
+
+
+
+
+}
+.main1{
+  border: 2px solid silver;
+  width: 35%;
+left: 50%;
+margin-left: 40px;
+background-color: rgb(54, 107, 107);
+border-radius: 20px;
+box-shadow:  wheat;
+
+}
+.main2{
+  border: 2px solid silver;
+  width: 44%;
+left: 50%;
+margin-left: 40px;
+background-color: rgb(54, 107, 107);
+border-radius: 20px;
+box-shadow:  wheat;
+
+}
+.main3{
+  border: 2px solid silver;
+  width: 55%;
+left: 50%;
+margin-left: 40px;
+background-color: rgb(54, 107, 107);
+border-radius: 20px;
+box-shadow:  wheat;
+
+}
+.main4{
+  border: 2px solid silver;
+  width: 70%;
+left: 50%;
+margin-left: 40px;
+background-color: rgb(54, 107, 107);
+border-radius: 20px;
+box-shadow:  wheat;
+
+}
+ 
+  
+  
+    }
+    @media (min-width: 700px) and (max-width: 991.98px) {
+    .HomeC{
+
+      width: px;
+      display: flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
+    }
+    .cont{
+      width: 100%;
+      margin:5px ;   
+
+      padding: 20px;
+    }
+.a{width: 750px;
+  margin:3px ;
+  border-radius: 20px;
+  box-shadow: black 20px;
+  text-align: center;
+
+}
+.title{
+
+  font-size: 30px;
+  left: 30%;
+}
+.title::before{
+  content:'' ;
+  position: absolute;
+  left: 10%;
+  height: 3px;
+  width: 20%;
+  background-color: aqua;
+  bottom: -20px;
+}
+.pa2{
+  display: none;
+  font-size: 12px;
+  background-color: black;
+  color: rgb(250, 243, 243);
+  border: 2px solid aqua;
+  width: 80%px;
+ border-radius: 20px;
+  margin: 3px;  
+  width: 300px;
+
+
+  font-size: 8px;
+}
+.r{
+  display: none;
+}
+.l{
+  display: none;
+}
+.c{
+display: none;
+}
+.pa2{
+  display: none;
+}
+.pa3{
+  display: flex;
+}
+.main{
+
+  font-size: 10px;
+  left: 0;
+  width: 33%;
+  
+  }
+  
+  .item{
+  
+  font-size: 12px;
+  
+  width: 66%px;
+  
+  margin: 5px;
+  }
+  .item::before{
+    display: none;
+  }
+  .list::before{
+    display: none;
+  }
+  .pa3{display: grid;
+    grid-template-rows: min-content(200px ,auto);
+    grid-template-areas: 
+    "5 5 6 6"
+    "6 6 6 6"
+    "7 7 7 7"
+    " 9 9 9 9"
+    
+  ;
+  font-size: medium;
+  text-align: center;
+  
+  
+  
+  
+  
+  }
+  .main1{
+    border: 2px solid silver;
+    width: 74%;
+  left: 50%;
+  margin-left: 40px;
+  background-color: rgb(54, 107, 107);
+  border-radius: 20px;
+  box-shadow:  wheat;
+  
+  }
+  .main2{
+    border: 2px solid silver;
+    width: 74%;
+  left: 50%;
+  margin-left: 40px;
+  background-color: rgb(54, 107, 107);
+  border-radius: 20px;
+  box-shadow:  wheat;
+  
+  }
+  .main3{
+    border: 2px solid silver;
+    width: 74%;
+  left: 50%;
+  margin-left: 40px;
+  background-color: rgb(54, 107, 107);
+  border-radius: 20px;
+  box-shadow:  wheat;
+  
+  }
+  .main4{
+    border: 2px solid silver;
+    width: 74%;
+  left: 50%;
+  margin-left: 40px;
+  background-color: rgb(54, 107, 107);
+  border-radius: 20px;
+  box-shadow:  wheat;
+  
+  }
+
+    }
+
+
+  
+  
+  
+  
+  

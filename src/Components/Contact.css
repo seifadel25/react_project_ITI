@@ -1,0 +1,143 @@
+
+@font-face {
+    font-family: Rail;
+    src: url('/public/raleway.light.ttf');
+  }
+
+*{
+    font-family:"Rail";
+}
+.formmain{
+    padding-top:8%;
+    padding-left:15%;
+    padding-right: 15%;
+}
+.formmain input:focus{
+    border: none;
+    outline:none;
+}
+.form1{
+    border: none;
+    background-color: rgb(19, 19, 22);
+    color: white;
+}
+.bord{
+    display: block;
+    position: relative;
+    border: none;
+    background-color: rgb(19, 19, 22);
+    color: white;
+    padding-bottom: 10px !important;
+}
+.bord:after{
+    display: block;
+    content: '';
+    height: 30%; 
+    width: 110%;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    border-bottom: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid white;
+}
+.bord1{
+    display: block;
+    position: relative;
+    border: none;
+    background-color: rgb(19, 19, 22);
+    color: white;
+    padding-bottom: 10px !important;
+}
+.bord1::after{
+    display: block;
+    content: '';
+    height: 20%; 
+    width: 97%;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    border-bottom: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid white;
+}
+.mail{
+    margin-left:8.3% !important ;
+}
+.btn1{
+    font-size: 90%;
+    height: 130%;
+    margin-left: 72% !important;
+    margin-top: 6% !important;
+    padding: 2% 4% 2% 4% !important;
+    background-color: rgb(19, 19, 22);
+    color: white;
+    border: 2px solid #00e1ff;
+}
+.MapLoc{
+    position: relative;
+    /* background-image: url('../Imgs/Location.png'); */
+    margin-top: 5% !important;
+    padding:0px !important;
+    height:350px;
+}
+.MapLoc .speech-bubble {
+	position: absolute;
+	background: #07bcd4;
+	border-radius: .4em;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+    padding:1% 4% !important;
+}
+
+.MapLoc .speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 31px solid transparent;
+	border-top-color: #07bcd4;
+	border-bottom: 0;
+	margin-left: -31px;
+	margin-bottom: -31px;
+}
+footer{
+    background-color:rgb(19, 19, 22) ;
+}
+footer div{
+    padding-top: 3% !important;
+    padding-bottom: 3% !important;
+}
+footer div p{
+    text-align: center;
+    color:white;
+    margin: 0;
+}
+footer div p a{
+    color: #00e1ff;
+    text-decoration: none;
+}
+footer div p a:hover{
+    color:#adecf5;
+}
+@media only screen and (max-width: 767px) {
+    .mail{
+        margin-left: 0 !important;
+        margin-top: 5% !important;
+    }
+    .bord1::after{
+        width:110% !important;
+    }
+    .btn1{
+        font-size: 75% !important;
+        margin-left: 80% !important;
+        margin-top: 6% !important;
+        width: 30% !important;
+    }
+    .MapLoc .speech-bubble{
+        top:30% !important;
+    }
+}
